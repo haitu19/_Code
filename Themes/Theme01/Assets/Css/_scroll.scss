@@ -1,0 +1,88 @@
+﻿.scroll-item{
+    margin: 10px;
+    border: 1px solid #d2d2d2;
+    height: 300px;
+    overflow-y: auto;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+            width: 7px;
+            height: 7px;
+	        background-color: #F5F5F5;
+        }
+        &::-webkit-scrollbar-track
+        {
+	        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	        background-color: #F5F5F5;
+            border-radius: 15px;
+        }
+        &::-webkit-scrollbar-thumb
+        {
+	        border-radius: 15px;
+	        background-image: -webkit-gradient(linear,
+									            left bottom,
+									            left top,
+									            color-stop(0.44, #245d7b),
+									            color-stop(0.72, #317ea7),
+									            color-stop(0.86, #49a0ce));
+        }
+    .list{
+        .list-title{
+        }
+        .list-text{
+            
+        }
+        .list-body{
+            .item{
+                .item-img{
+                    .imgc{
+                        &:before{
+                            padding-bottom: 80%;
+                        }
+                    }
+                }
+                .item-body{
+                    padding: 10px;
+                    .item-subtitle{
+                        display: block;
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    .item-title{
+                        display: block;
+                        color: #333;
+                        font-weight: bold;
+                        font-size: 18px;
+                        &:hover{
+                            color: #0094ff;
+                        }
+                    }
+                    .item-date-view{
+                        font-size: 15px;
+                        color: #999;
+                    }
+                    .item-text{
+                        margin-top: 10px;
+                    }
+                    .item-price{
+                        .text{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        .price{
+                            color: red;
+                        }
+                        .price-line-through{}
+                    }
+                    .item-links{
+                        margin-top: 15px;
+                        .item-link{
+                            color: #0026ff;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

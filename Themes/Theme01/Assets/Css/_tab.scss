@@ -1,0 +1,22 @@
+﻿.box-1{
+    .tabs-wrap{
+        .tabs{
+            border-bottom: 1px solid #ff6a00;
+            .tab{
+                font-size: 18px;
+                font-weight: bold;
+                color: #fff;
+                background: #ff6a00;
+                padding: 3px 20px;
+                &.active{
+                    background: red;
+                }
+            }
+        }
+        .tabs-content{
+            .tab-content{
+                padding: 10px;
+            }
+        }
+    }
+}

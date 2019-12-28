@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu vạn cấp</title>
+
+    <!-- #region Các thẻ meta tĩnh -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noodp,index,follow" />
+    <!-- #endregion -->
+
+    <link href="/Themes/Theme01/Assets/Css/__main.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <nav class="header-menu">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" title="Giới thiệu">Giới thiệu</a>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#">content</a>
+                            <ul>
+                                <li><a href="#">sub content</a></li>
+                                <li class="dropdown">
+                                    <a href="#">sub content</a>
+                                    <ul>
+                                        <li><a href="#">sub content 2</a></li>
+                                        <li><a href="#">sub content 2</a></li>
+                                        <li><a href="#">sub content 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">sub content</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">content</a></li>
+                        <li><a href="#">content</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" title="Sản phẩm ưu đãi">Sản phẩm ưu đãi</a></li>
+                <li><a href="#" title="Kỹ thuật bảo trì">Kỹ thuật bảo trì</a></li>
+            </ul>
+            <button class="toggle"><span></span></button>
+        </nav>
+    </div>
+
+    <!-- #region Các file js -->
+    <script src="/Themes/Theme01/Assets/Js/__Homepage.min.js"></script>
+    <script>
+        $(function () {
+            var navContainer = $('.header-menu > ul'),
+                navToggle = $('.header-menu > .toggle'),
+                navDropdownToggle = $('.header-menu .dropdown'),
+                overlay = $("<div class='overlay'></div> ");
+
+            navToggle.on('click', function (e) {
+                overlay.toggle();
+                var $this = $(this);
+                e.preventDefault();
+                $this.toggleClass('show');
+                navContainer.toggleClass('visible');
+            });
+
+            $("body").prepend(overlay);
+            overlay.click(function () {
+                navToggle.trigger('click');
+            });
+
+            navDropdownToggle.on('click', function () {
+                if ($(window).width() < 1200) {
+                    var $this = $(this);
+                    $this.children().children().removeClass('show');
+                    $this.toggleClass('show').siblings().removeClass('show');
+
+                    if ($this.children('ul').hasClass('open-nav')) {
+                        $this.children('ul').removeClass('open-nav');
+                        $this.children('ul').slideUp(350);
+                    }
+                    else {
+                        $this.parent().parent().find('li ul').removeClass('open-nav');
+                        $this.parent().parent().find('li ul').slideUp(350);
+                        $this.children('ul').toggleClass('open-nav');
+                        $this.children('ul').slideToggle(350);
+                    }
+                }
+            });
+
+            navDropdownToggle.on('click', '*', function (e) {
+                e.stopPropagation();
+            });
+        });
+    </script>
+
+</body>
+</html>

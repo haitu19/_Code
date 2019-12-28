@@ -1,0 +1,40 @@
+﻿.item{
+    &:hover{
+        .item-img{
+            .imgc{
+                &:after{
+                    left: 130%;
+                    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                }
+                img{
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+    .item-img{
+        .imgc{
+            position: relative;
+            overflow: hidden;
+            img{
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            }
+            &:before{
+                padding-bottom: 70.15%;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                top: -70px;
+                left: -150px;
+                width: 50px;
+                height: 400px;
+                background: #fff;
+                opacity: .2;
+                z-index: 1;
+                transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                transform: rotate(35deg);
+            }
+        }
+    }
+}

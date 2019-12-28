@@ -1,0 +1,308 @@
+﻿/*list cơ bản*/
+.box-1{
+    .list{
+        text-align: center;
+        .list-title{
+            font-size: 32px;
+            color: #0094ff;
+            font-weight: bold;
+        }
+        .list-text{
+            font-size: 16px;
+            color: #666;
+            padding: 0 20%;
+        }
+        .list-body{
+            text-align: left;
+            .item{
+                border: 1px solid #d2d2d2;
+                .item-img{
+                    .imgc{
+                        &:before{
+                            padding-bottom: 65%;
+                        }
+                    }
+                }
+                .item-body{
+                    padding: 10px;
+                    .item-subtitle{
+                        display: block;
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    .item-title{
+                        display: block;
+                        color: #333;
+                        font-weight: bold;
+                        font-size: 18px;
+                        &:hover{
+                            color: #0094ff;
+                        }
+                    }
+                    .item-date-view{
+                        font-size: 15px;
+                        color: #999;
+                    }
+                    .item-text{
+                        margin-top: 10px;
+                    }
+                    .item-price{
+                        .text{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        .price{
+                            color: red;
+                        }
+                        .price-line-through{}
+                    }
+                    .item-links{
+                        margin-top: 15px;
+                        .item-link{
+                            color: #0026ff;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*List item có header*/
+.box-2{
+    margin-top: 20px;
+    .list{
+        border: 1px solid #d2d2d2;
+        .list-header{
+            padding: 0 10px;
+            height: 40px;
+            line-height: 40px;
+            background: #0094ff;
+            .list-title{
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .btn{
+                float: right;
+                height: 100%;
+                line-height: 40px;
+                padding: 0;
+                color: #fff;
+            }
+        }
+        .list-body{
+            padding: 20px 10px;
+             .item{
+                border: 1px solid #d2d2d2;
+                .item-img{
+                    .imgc{
+                        &:before{
+                            padding-bottom: 65%;
+                        }
+                    }
+                }
+                .item-body{
+                    padding: 10px;
+                    .item-subtitle{
+                        display: block;
+                        color: #333;
+                        font-size: 16px;
+                    }
+                    .item-title{
+                        display: block;
+                        color: #333;
+                        font-weight: bold;
+                        font-size: 18px;
+                        &:hover{
+                            color: #0094ff;
+                        }
+                    }
+                    .item-date-view{
+                        font-size: 15px;
+                        color: #999;
+                    }
+                    .item-text{
+                        margin-top: 10px;
+                    }
+                    .item-price{
+                        .text{
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                        .price{
+                            color: red;
+                        }
+                        .price-line-through{}
+                    }
+                    .item-links{
+                        margin-top: 15px;
+                        .item-link{
+                            color: #0026ff;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*list item có nhiều danh mục*/
+.box-3{
+    margin-top: 20px;
+    .list{
+        text-align: center;
+        .list-title{
+            font-size: 32px;
+            color: #0094ff;
+            font-weight: bold;
+        }
+        .list-text{
+            font-size: 16px;
+            color: #666;
+            padding: 0 20%;
+        }
+        .list-body{
+            .sublist{
+                &.sublist-1{
+                    border: 1px solid #d2d2d2;
+                    .sublist-title{
+                        font-size: 20px;
+                        color: #0094ff;
+                        font-weight: bold;
+                    }
+                    .sublist-text{
+
+                    }
+                    .sublist-body{
+                        padding: 10px;
+                        text-align: left;
+                        .item{
+                            border: 1px solid #d2d2d2;
+                            .item-img{
+                                .imgc{
+                                    &:before{
+                                        padding-bottom: 65%;
+                                    }
+                                }
+                            }
+                            .item-body{
+                                padding: 10px;
+                                .item-subtitle{
+                                    display: block;
+                                    color: #333;
+                                    font-size: 16px;
+                                }
+                                .item-title{
+                                    display: block;
+                                    color: #333;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    &:hover{
+                                        color: #0094ff;
+                                    }
+                                }
+                                .item-date-view{
+                                    font-size: 15px;
+                                    color: #999;
+                                }
+                                .item-text{
+                                    margin-top: 10px;
+                                }
+                                .item-price{
+                                    .text{
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                    }
+                                    .price{
+                                        color: red;
+                                    }
+                                    .price-line-through{}
+                                }
+                                .item-links{
+                                    margin-top: 15px;
+                                    .item-link{
+                                        color: #0026ff;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.sublist-2{
+                    border: 1px solid #d2d2d2;
+                    .sublist-title{
+                        font-size: 20px;
+                        color: #0094ff;
+                        font-weight: bold;
+                    }
+                    .sublist-text{
+
+                    }
+                    .sublist-body{
+                        padding: 10px;
+                        text-align: left;
+                        .item{
+                            border: 1px solid #d2d2d2;
+                            .item-img{
+                                .imgc{
+                                    &:before{
+                                        padding-bottom: 65%;
+                                    }
+                                }
+                            }
+                            .item-body{
+                                padding: 10px;
+                                .item-subtitle{
+                                    display: block;
+                                    color: #333;
+                                    font-size: 16px;
+                                }
+                                .item-title{
+                                    display: block;
+                                    color: #333;
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    &:hover{
+                                        color: #0094ff;
+                                    }
+                                }
+                                .item-date-view{
+                                    font-size: 15px;
+                                    color: #999;
+                                }
+                                .item-text{
+                                    margin-top: 10px;
+                                }
+                                .item-price{
+                                    .text{
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                    }
+                                    .price{
+                                        color: red;
+                                    }
+                                    .price-line-through{}
+                                }
+                                .item-links{
+                                    margin-top: 15px;
+                                    .item-link{
+                                        color: #0026ff;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

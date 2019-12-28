@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>search</title>
+
+    <!-- #region Các thẻ meta tĩnh -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noodp,index,follow" />
+    <!-- #endregion -->
+
+    <link href="/Themes/Theme01/Assets/Css/__main.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container box">
+        <span>Search 1:</span>
+        <div class="box-search-1">
+            <input type="text" value="" placeholder="Tìm kiếm..." />
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <span>Search 2:</span>
+        <div class="box-search-2">
+            <input type="text" value="" placeholder="Tìm kiếm..." />
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+        <span>Search 3:</span>
+        <div class="box-search-3">
+            <div class="icon-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+            <div class="search">
+                <input type="text" value="" placeholder="Tìm kiếm..." />
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- #region Các file js -->
+    <script src="/Themes/Theme01/Assets/Js/__Homepage.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".icon-search").click(function () {
+                $(".search").toggleClass("active");
+            })
+        })
+    </script>
+</body>
+</html>
